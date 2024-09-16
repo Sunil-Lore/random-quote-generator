@@ -1,8 +1,8 @@
 const myQuotes = [
-    "Comparison kills creativity",
-    "Only you and you alone can change your situation",
-    "Don't compare your chapter 1 to someone else's chapter 20",
-    "Only person who can help you is you",
+    "Comparison kills creativity.",
+    "Only you and you alone can change your situation.",
+    "Don't compare your chapter 1 to someone else's chapter 20.",
+    "Only person who can help you is you.",
     "The purpose of our lives is to be happy."
 ];
 
