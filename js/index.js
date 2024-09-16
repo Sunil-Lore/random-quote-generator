@@ -1,17 +1,20 @@
-const quotes = [
-    "The best way to predict the future is to invent it.",
-    "Life is 10% what happens to us and 90% how we react to it.",
-    "The only way to do great work is to love what you do.",
-    "You miss 100% of the shots you don't take.",
+const myQuotes = [
+    "Comparison kills creativity",
+    "Only you and you alone can change your situation",
+    "Don't compare your chapter 1 to someone else's chapter 20",
+    "Only person who can help you is you",
     "The purpose of our lives is to be happy."
 ];
 
-function newQuote() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    document.getElementById('quote').innerText = quotes[randomIndex];
+function quoteGenerator() {
+    const randomIndex = Math.floor(Math.random() * myQuotes.length);
+    $('#quote').fadeOut(1500, function() {
+        $(this).text(myQuotes[randomIndex]).fadeIn(2000);
+    });
 }
 
-document.getElementById('new-quote').addEventListener('click', newQuote);
+$('#new-quote').on('click', quoteGenerator);
 
-// Initialize with a quote
-newQuote();
+
+const initialIndex = Math.floor(Math.random() * myQuotes.length);
+$('#quote').text(myQuotes[initialIndex]).show();
